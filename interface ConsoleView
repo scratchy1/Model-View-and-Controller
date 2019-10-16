@@ -1,0 +1,15 @@
+package eA54modelViewController;
+
+public class ConsoleView implements View {
+    private EggTimerModel model;
+
+    public ConsoleView(EggTimerModel model) {
+        this.model = model;
+    }
+
+    @Override
+    public void display() {
+        int percent = (int) (model.getElapsedPart() * 100);
+        System.out.println(percent + " %");
+    }
+}
