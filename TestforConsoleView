@@ -1,0 +1,17 @@
+package eA54modelViewController;
+
+public class MVCEggTimerTest3 {
+
+    public static void main(String[] args) {
+        EggTimerModel emodel = new EggTimerModel(60);
+        View view = new ConsoleView(emodel);
+        EggTimerController etController = new EggTimerController(emodel, view);
+        etController.ebtimer.start();
+    }
+
+}
+/*In einer Sprachausgabe könnte diese z.B. Sounddateien abspielen, in
+denen so etwas wie "Zehn Prozent", "Zwanzig Prozent" usw. abgespeichert
+ist. Oder einfach nur ein Piepsen bei jedem Aufruf von display, aber
+jedes zehnte Mal einer in einem anderen Ton, damit man den Fortschritt
+merkt und am Ende eine Fanfare...*/
