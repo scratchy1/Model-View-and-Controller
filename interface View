@@ -1,5 +1,0 @@
-package eA54modelViewController;
-
-public interface View {
-    public void display();
-}
